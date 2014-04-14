@@ -1,0 +1,17 @@
+
+[hub]
+protocol = https
+
+[core]
+	excludesfile = ~/.gitignore
+	autocrlf = input
+	editor = vim
+	attributesfile = ~/.gitattributes
+	whitespace = trailing-space,space-before-tab
+[user]
+	name = goncalo
+	email = goncalo@goncalopereira.com
+[color]
+	ui = true
+[push]
+	default = current
