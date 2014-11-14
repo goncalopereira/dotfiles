@@ -39,7 +39,7 @@ ZSH_THEME="blinks"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(brew bundler knife jsontools lol osx ruby sublime sudo wd gitfast)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -57,3 +57,5 @@ function git_prompt_info() {
   ref=$(git symbolic-ref HEAD 2> /dev/null) || return
     echo "$ZSH_THEME_GIT_PROMPT_PREFIX${ref#refs/heads/}$ZSH_THEME_GIT_PROMPT_SUFFIX"
   }
+
+   fpath=(/usr/local/share/zsh-completions $fpath)

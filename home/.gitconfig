@@ -10,8 +10,12 @@ protocol = https
 	whitespace = trailing-space,space-before-tab
 [user]
 	name = goncalo
-	email = goncalo@goncalopereira.com
+	email = github@goncalopereira.com
 [color]
 	ui = true
 [push]
 	default = current
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
